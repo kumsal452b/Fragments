@@ -12,9 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import java.util.zip.Inflater;
-
-public class fragment1 extends Fragment {
+public class fragment3 extends Fragment {
     private static final String TAG = "fragment1";
     private Button btnfrag1;
     private Button btnfrag2;

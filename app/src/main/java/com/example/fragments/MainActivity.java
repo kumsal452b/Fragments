@@ -1,6 +1,7 @@
 package com.example.fragments;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -21,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    private void setupPager)
+    public void setupPager(ViewPager viewPager){
+        SectionStatePagerAdapter adapter2=new SectionStatePagerAdapter(getSupportFragmentManager());
+        adapter2.addFragment(new fragment1(),"Fragment1");
+        adapter2.addFragment(new fragment2(),"Fragment2");
+        adapter2.addFragment(new fragment3(),"Fragment3");
+        viewPager.setAdapter(adapter2);
+    }
+    public void setupPager(int fragmentNumber){
+        viewPager.setCurrentItem(fragmentNumber);
+    }
 }
